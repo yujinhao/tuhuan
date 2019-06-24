@@ -1,0 +1,833 @@
+header {
+	position: fixed;
+	z-index: 10000;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+/*轮播*/
+
+.tranpic{
+	transform: scale(1.8);
+	transition: 1s;
+}
+
+.i-itme-conm {
+	position: relative;
+}
+
+.myban-body {
+	height: 292px;
+	width: 1170px;
+	/*background: lime;*/
+	position: relative;
+	overflow: hidden;
+}
+
+#myslide-ul {
+	height: 100%;
+	/*width: 2340px;*/
+	width: 7020px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: left 2s;
+}
+
+#myslide-next {
+    background: url(../img/health/mis-next-icon.svg)no-repeat;
+    background-size: 35px 35px;
+    cursor: pointer;
+    height: 290px;
+    width: 500px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    /*background: red;*/
+    background-position: 404px 150px;
+}
+
+
+.myslidepic p{
+	position: absolute;
+	top: 90%;
+	left: 20%;
+	text-align: center;
+	font-size: 18px;
+    color: #333;
+    display: none;
+    transition: 2s;
+    animation: goup 1s linear;
+    /*margin: 20px 0 15px;*/
+	/*margin-top: 20px;*/
+}
+
+
+
+#myslide-before {
+	background: url(../img/health/mis-prev-icon.svg)no-repeat;
+	    
+    background-size: 35px 35px;
+    cursor: pointer;
+    height: 290px;
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background: red; */
+    background-position: 62px 150px;
+}
+
+.myslidepic {
+	position: relative;
+	/*transform: scale(1.5);*/
+	padding: 50px 57px;
+	/*border: 1px solid red;*/
+	width: 234px;
+	height: 292px;
+	float: left;
+	
+}
+
+.disp{
+	display: block !important;
+	
+	animation:goup 1s linear;
+	transition: 2s;
+}
+@keyframes goup{
+	from{
+		top:75%;
+		opacity: 0;
+	}
+	to{
+		top:90%;
+		opacity: 1;
+		}
+}
+
+.myslidepic img {
+	border-radius: 100%;
+	height: 120px;
+	width: 120px;
+}
+
+.i-itme-conm {
+	background-color: gainsboro;
+	padding: 60px 0;
+}
+
+@keyframes animateleft {
+	from {
+		/*transform: scale(2);*/
+		left: -50%;
+		opacity: 0.1;
+	}
+	to {
+		/*transform: scale(1);*/
+		left: 0%;
+		opacity: 1;
+	}
+}
+
+@keyframes animateright {
+	from {
+		/*transform: scale(2);*/
+		/*left: 50%;*/
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	to {
+		/*transform: scale(1);*/
+		/*left: 0%;*/
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes animateshang {
+	from {
+		transform: scale(5);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.carousel-caption h1 {
+	font-size: 50px;
+}
+
+.carousel-caption h1 {
+	animation: animateshang 1s linear;
+}
+
+.title-text {
+	height: 200px;
+	width: 600px;
+	background: red;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+}
+
+.tureleft {
+	height: 100px !important;
+	width: 30px !important;
+	background: rgba(0, 0, 0, 0.5) !important;
+	position: absolute !important;
+	left: 0 !important;
+	top: 40%;
+	text-align: center;
+	display: none !important;
+}
+
+.tureleftbtn {
+	position: absolute;
+	top: 40px;
+	left: 8px;
+}
+
+.tureright {
+	height: 100px !important;
+	width: 30px !important;
+	background: rgba(0, 0, 0, 0.5) !important;
+	position: absolute !important;
+	right: 0 !important;
+	top: 40%;
+	text-align: center;
+	display: none !important;
+}
+
+.carousel-inner .item img {
+	margin: 0 auto;
+	/*height: 760px;*/
+	width: auto;
+}
+
+.slide {
+	margin-top: 80px;
+}
+
+.slide:hover .tureleft {
+	display: block !important;
+}
+
+.slide:hover .tureright {
+	display: block !important;
+}
+
+.carousel-indicators .active {
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: rgba(78, 196, 135, 0);
+	background-color: rgba(78, 196, 135, 0);
+	border: 1px solid #4ec487;
+	border-radius: 0px;
+}
+
+.carousel-indicators li {
+	width: 20px;
+	height: 2px;
+	margin: 0;
+	background-color: #fff;
+}
+
+.title-comm {
+	text-align: center;
+	margin: 100px 0 80px 0;
+}
+
+.line {
+	height: 2px;
+	border-top: 1px solid #3bbe7a;
+	width: 30px;
+	margin: 20px auto 40px;
+}
+
+.linh25 {
+	line-height: 25px;
+	color: #666666;
+}
+
+.linian-div {
+	margin-left: 30px;
+}
+
+.large-3 {
+	width: 33.33333333%;
+	float: left;
+}
+
+.col-div {
+	/*padding: 25px;*/
+	overflow: hidden;
+	text-align: center;
+	background-color: rgba(59, 190, 122, .8);
+	color: rgba(255, 255, 255, .8);
+	border-radius: 2px;
+	padding: 18% 10%;
+}
+
+.ac-figure-icon {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pu-logo-icon {
+	background-image: url(../img/puhui.svg);
+	background-repeat: no-repeat;
+	background-size: 110px 110px;
+	width: 110px;
+	height: 110px;
+}
+
+.chuanxin-logo-icon {
+	background-image: url(../img/chuangxin.svg);
+	background-repeat: no-repeat;
+	background-size: 110px 110px;
+	width: 110px;
+	height: 110px;
+}
+
+.chonggou-logo-icon {
+	background-image: url(../img/chonggou.svg);
+	background-repeat: no-repeat;
+	background-size: 110px 110px;
+	width: 110px;
+	height: 110px;
+}
+
+.tuhuanyuanjing {
+	margin-top: 9%;
+}
+
+.thyj-logo-icon {
+	background-repeat: no-repeat;
+	background-image: url(../img/lthyj-ogo.svg);
+	background-size: 100px 100px;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}
+
+.tuhuanyuanjing p {
+	margin-bottom: 7px;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.lineheight {
+	/*height: 5px;*/
+	margin: 30px auto 26px;
+}
+
+.line-tuhuan {
+	border-top: 2px solid #3bbe7a;
+	width: 80px;
+	margin: auto;
+}
+
+.title-comm-tuhuan {
+	text-align: center;
+	margin: 100px 0 80px;
+}
+
+.mb8 {
+	margin-bottom: 8px;
+}
+
+.color-gray {
+	color: #aaa;
+}
+
+.lineheight {
+	margin: 30px auto 26px !important;
+}
+
+.tuhuan-text {
+	color: #aaa;
+	font-size: 16px;
+}
+
+.line-tuhuan {
+	border-top: 2px solid #3bbe7a;
+	width: 80px;
+	margin: auto;
+}
+
+.title-comm-tuhuan {
+	text-align: center;
+	margin: 100px 0 80px;
+}
+
+.tuhuan-item-comm {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	font-size: 16px;
+	/*padding: 0 20px;*/
+	/*text-align: center;*/
+}
+
+.tuhuan-item-comm img {
+	width: 100%;
+	height: 100%;
+}
+
+.tuhuan-item-comm div {
+	padding: 0 !important;
+}
+
+.zljh-logo-icon {
+	background-image: url(../img/health/zljh-logo-icon.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+	left: 0;
+	top: 0;
+	background-size: 70px 70px;
+	/*z-index: 1000;*/
+}
+
+.service-system {
+	width: 100%;
+	overflow: hidden;
+}
+
+.service-system img {
+	width: 100%;
+	height: 100%;
+}
+
+.service-box {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.original-shape {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgba(59, 190, 122, .95);
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 150px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 18%;
+}
+
+.myheadline {
+	text-align: center !important;
+}
+
+.yuline {
+	border-top: 1px solid #3bbe7a;
+	width: 30px;
+	margin: 5px auto 10px;
+}
+
+.encourage {
+	position: relative;
+	height: 160px;
+	/*width: 88.89%;*/
+	background-color: #f0f0f0;
+	border-radius: 4px;
+	border: 1px solid #3bbe7a;
+	/*box-shadow: none;*/
+	/*z-index: 10;*/
+}
+
+.encourage-head {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: -26px;
+	margin: 0;
+	left: 0;
+	text-align: center;
+}
+
+.encourage-head img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.encourage-txt {
+	margin-top: 10%;
+	padding: 5% 5%;
+}
+
+.mythumbnail {
+	margin-top: 8%;
+	margin-bottom: 20%;
+	padding: 0 !important;
+	border: none;
+}
+
+.encourage-txt p {
+	/*文本强制不换行*/
+	/*white-space: nowrap;*/
+	overflow: hidden;
+	/*溢出的部分隐藏*/
+	text-overflow: ellipsis;
+	/*文本溢出显示省略号*/
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	/*超出3行就省略号*/
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+}
+
+.encourage-bottom {
+	position: absolute;
+	font-size: 12px;
+	bottom: 12px;
+	width: 91%;
+}
+
+.illness {
+	padding: 0 10px;
+	float: left;
+	background-color: #aaa;
+	color: #fff;
+	margin: 0.5% 5%;
+	max-width: 50%;
+	background-color: #aaa;
+}
+
+.position-address {
+	max-width: 50%;
+	float: right;
+}
+
+.position-icon {
+	background-image: url(../img/health/position-icon.svg);
+	background-repeat: no-repeat;
+	background-size: 10px 10px;
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin-top: 3px;
+	margin-right: 4px;
+}
+
+.iphone-slide {
+	overflow: hidden;
+	background-image: url(../img/health/shoujibei_icon.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 660px;
+	margin-top: 98px;
+}
+
+.myphone-banner {
+	width: 100%;
+	background: url(../img/health/shoujitu.png)1% 0% no-repeat;
+	background-size: cover;
+	position: relative;
+	background-size: 315px 660px;
+}
+
+.app-none {
+	/*height: 660px;*/
+	width: 100%;
+}
+
+.app-none-img {
+	/*height: 660px;*/
+	width: 315px;
+}
+
+#iphone-picbox {
+	width: 315px;
+	height: 660px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	/*background: lawngreen;*/
+}
+
+.iphonepic {
+	display: block;
+	height: 454px;
+	width: 256px;
+	position: absolute;
+	top: 180px;
+	left: 39px;
+	transition: 1s;
+}
+
+.iphonepic img {
+	height: 100%;
+	width: 100%;
+	transition: 0.5s;
+}
+
+#iphone-btnbox {
+	position: absolute;
+	margin-right: 1px;
+	bottom: 80px;
+	left: 423px;
+	/*background: red;*/
+}
+
+.iphone-btn {
+	text-align: center;
+	width: 83px;
+	float: left;
+	list-style: none;
+	margin-top: 5%;
+	/*background: greenyellow;*/
+}
+
+.current {
+	animation: animateright 1s linear;
+}
+
+.iphone-btn img {
+	border-radius: 50%;
+	border: 1px solid gainsboro;
+	height: 64px;
+	width: 64px;
+	transition: 0.5s;
+	/*background: rgba(59,190,122,.9);*/
+}
+
+.app-none-txt {
+	padding: 0 15px;
+	line-height: 1.8;
+	position: absolute;
+	left: 417px;
+	top: 150px;
+	width: 50%;
+}
+
+.bannertxt {
+	position: absolute;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	/*display: none;*/
+	width: 100%;
+	transition: 0.5s;
+}
+
+.banneract {
+	opacity: 1;
+	/*animation:animateright 1s linear ;*/
+}
+
+.iphone-txt1 {
+	/*width: auto;*/
+	color: white;
+	font-size: 34px;
+}
+
+.iphone-txt2 {
+	color: white;
+	font-size: 18px;
+}
+
+.greendownload {
+	height: 100px;
+	width: 100%;
+	background: #3bbe7a;
+}
+
+.xiazaiapp-text {
+	height: 100%;
+	width: auto;
+	line-height: 100px;
+	color: white;
+	font-size: 28px;
+}
+
+.greenbtn {
+	background-color: #fff;
+	width: 150px;
+	height: 44px;
+	border-radius: 2px;
+	float: right;
+	margin-left: 30px;
+	margin-top: 30px;
+	text-align: center;
+	border: none;
+	color: #3bbe7a;
+}
+@media(max-width:1200px){
+	.i-itme-conm{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1068px) and (min-width: 768px) {
+	.xiazaiapp-text {
+		line-height: 96px;
+		font-size: 23px;
+	}
+	.greenbtn {
+		width: 120px;
+		height: 34px;
+		font-size: 13px;
+	}
+	.bannertxt div {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 846px) {
+	.iphone-btn {
+		display: none;
+	}
+	.app-none-txt {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.greendownload {
+		height: 60px;
+	}
+	.greenbtn {
+		width: 88px;
+		height: 26px;
+		font-size: 12px;
+		margin-top: 19px;
+		margin-right: 15px;
+	}
+	.xiazaiapp-text {
+		font-size: 14px;
+		margin-right: -15px;
+		line-height: inherit;
+		margin-top: 10px;
+	}
+	.title-comm {
+		text-align: center;
+		margin: 40px 0 30px;
+		font-size: 12px;
+	}
+	.encourage-txt {
+		margin-top: 2%;
+		padding: 5% 5%;
+	}
+	.zljh-logo-icon {
+		background-size: 43px 43px;
+	}
+	.mythumbnail {
+		margin-top: 10%;
+		margin-bottom: 5%;
+		padding: 0 !important;
+		border: none;
+	}
+	.original-shape {
+		font-size: 12px;
+		width: 60px;
+		height: 60px;
+		line-height: 65px;
+	}
+	.title-comm-tuhuan p {
+		margin-bottom: 10px;
+		/*color: gainsboro;*/
+	}
+	.title-comm p {
+		color: grey;
+	}
+	.lineheight {
+		margin: 15px auto;
+	}
+	.title-comm-tuhuan p {
+		margin-bottom: 10px;
+	}
+	.lineheight {
+		margin: 15px auto;
+	}
+	.lineheight {
+		margin: 30px auto 26px;
+	}
+	.line-tuhuan {
+		width: 40px;
+	}
+	.title-comm-tuhuan {
+		font-size: 13px !important;
+	}
+	.title-comm-tuhuan p {
+		margin-bottom: 10px;
+		color: #666;
+	}
+	.title-comm-tuhuan {
+		margin: 30px 0 20px;
+	}
+	.carousel-caption h1 {
+		animation: 0;
+	}
+	.carousel-caption h1 {
+		font-size: 20px;
+	}
+	.slide {
+		margin-top: 60px;
+	}
+	.mynav {
+		height: 60px;
+	}
+	.slide:hover .tureleft {
+		display: none !important;
+	}
+	.slide:hover .tureright {
+		display: none !important;
+	}
+	.large-3 {
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+		margin-left: -20px;
+	}
+}
+
+@media only screen and (max-width: 767px) .linian-div .small-12 {
+	width: 100%;
+}
+
+@media (max-width: 767px) .col-div {
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1068px) .pu-logo-icon,
+.chuanxin-logo-icon,
+.chonggou-logo-icon {
+	background-size: 80px 80px;
+	width: 80px;
+	height: 80px;
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	...
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	...
+}
+
+@media (min-width: @screen-lg-min) {
+	...
+}

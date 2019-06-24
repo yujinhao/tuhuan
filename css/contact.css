@@ -1,0 +1,94 @@
+
+
+#thmap{
+	background: url(../img/contact/地图.PNG)no-repeat;
+	
+
+}
+.title-comm {
+	text-align: center;
+	margin: 100px 0 80px;
+}
+
+.large-3 {
+	width: 33.33333333%;
+	float: left;
+}
+
+.linh25 {
+	line-height: 25px;
+}
+
+.gray-line {
+	border-top: 1px solid rgba(170, 170, 170, .3);
+	width: 100%;
+}
+
+.tcenter {
+	text-align: center;
+}
+
+.contactus-item {
+	margin-bottom: 100px;
+}
+
+.contact-kefu {
+	background-repeat: no-repeat;
+	background-image: url(../img/contact/contact-kefu.svg);
+	background-size: 110px 110px;
+	height: 110px;
+	width: 110px;
+}
+
+.contact-swhz {
+	background-repeat: no-repeat;
+	background-image: url(../img/contact/contact-swhz.svg);
+	background-size: 110px 110px;
+	height: 110px;
+	width: 110px;
+}
+
+.contact-dizhi {
+	background-repeat: no-repeat;
+	background-image: url(../img/contact/contact-dizhi.svg);
+	background-size: 110px 110px;
+	height: 110px;
+	width: 110px;
+}
+
+.ac-figure-icon {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contactus-item p {
+	margin: 0 0 5px;
+}
+
+.f12 {
+	color: #666666;
+	font-size: 14px;
+}
+
+#thmap {
+	min-height: 500px;
+	min-width: auto;
+}
+
+@media (max-width: 767px) {
+	#thmap {
+		margin-top: 60px;
+		min-height: 300px;
+		min-width: auto;
+	}
+	.f12 {
+		font-size: 12px;
+	}
+	.title-comm {
+		font-size: 12px;
+	}
+	.title-comm {
+		text-align: center;
+		margin: 50px 0 40px;
+	}
+}

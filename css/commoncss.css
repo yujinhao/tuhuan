@@ -1,0 +1,401 @@
+body {
+	background: ghostwhite;
+}
+
+header {
+	position: fixed;
+	z-index: 10000;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0 !important;
+}
+
+.line {
+	border-top: 1px solid #3bbe7a;
+	width: 30px;
+	margin: 20px auto 40px;
+}
+
+.title-comm {
+	text-align: center;
+	margin: 100px 0 80px;
+}
+
+@media (max-width: 767px) {
+	.title-comm {
+		font-size: 12px;
+	}
+	.title-comm {
+		text-align: center;
+		margin: 50px 0 40px;
+	}
+	.line {
+		border-top: 2px solid #3bbe7a;
+		width: 20px !important;
+		margin: 15px auto !important;
+	}
+	.contactus .small-12 {
+		width: 100%;
+	}
+	.contactus-item {
+		margin-bottom: 40px;
+	}
+}
+
+
+/*.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}*/
+
+#bs-example-navbar-collapse-1 {
+	margin-top: -7px;
+	border-top: none;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	border-radius: 0 !important;
+}
+
+.mynavbara:hover {
+	color: #3bbe7a !important;
+}
+
+.line-top {
+	border-top: 1px solid white;
+	width: 18px;
+	margin: auto;
+}
+
+.mynavbara:hover+.line-top {
+	/*弟弟级用加号*/
+	/*color:#3bbe7a !important;*/
+	/*border-bottom: 1px solid #3bbe7a;*/
+	border-top: 1px solid #3bbe7a;
+}
+
+.mylogo {
+	background: url(../img/logo-pc.svg);
+	/*margin: 0 20%;*/
+}
+
+.mynav {
+	height: 80px;
+	border-bottom: 1px solid ghostwhite;
+	/*z-index: 1000;*/
+	border-radius: 0 !important;
+}
+
+.mynavbara {
+	text-align: center;
+	/*border-bottom: 1px solid #3bbe7a;*/
+	padding-bottom: 2px !important;
+	font-size: 15px;
+	font-weight: 600;
+	position: relative;
+}
+
+.navbar-default {
+	background-color: white;
+	/*border-color: #e7e7e7;*/
+	box-shadow: 0 1px 5px #e7e7e7;
+}
+
+.ahdbtn {
+	border: none;
+	/*margin-top: -10%;*/
+}
+
+#hdbtn {
+	margin-top: -8px;
+	margin-bottom: 0;
+	border: 1px solid #3BBE7A;
+	background: white;
+	color: #3BBE7A;
+}
+
+#hdbtn:hover {
+	margin-top: -8px;
+	margin-bottom: 0;
+	border: 1px solid #3BBE7A;
+	background: #3BBE7A;
+	color: #FFFFFF;
+}
+
+#hbtn {
+	border: none;
+}
+
+#hbtn span {
+	background-color: #3bbe7a;
+}
+
+
+/*微信扫码*/
+
+#picweima {
+	width: 300 px;
+	height: 300px;
+	padding: 20px;
+	margin-top: 80px;
+	border: 1px solid rgba(170, 170, 170, 0.3);
+}
+
+.modal-content {
+	width: 580px;
+	height: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pop-erweima-text {
+	font-size: 16px;
+	color: #666;
+	margin: 0 auto;
+}
+
+.close {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+
+
+/*缩小按钮*/
+
+
+/*.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-toggle .icon-bar{
+	background-color: rgba(59,190,122,.9) ;
+	height: 1px;
+}*/
+
+.mynavbarul li {
+	padding: 16px 20px 5px 20px;
+}
+
+.amylogo {
+	display: inline-block;
+	height: 78px;
+	width: 138px;
+	background: url(../img/logo-pc.svg) 10px 0px no-repeat;
+	background-color: #3bbe7a;
+	margin-left: 20%;
+}
+
+.amylogo-pic {
+	display: none;
+}
+
+
+/*脚步样式*/
+
+.ac-gf-footer-legal {
+	float: left;
+}
+
+.footer-legal-links {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.bor-line {
+	width: 1px;
+	height: 10px;
+	border-right: 1px solid rgba(170, 170, 170, .5);
+	margin-top: 6px;
+	float: left;
+}
+
+.footer-legal-links a:first-child {
+	padding-left: 0;
+}
+
+.footer-legal-links a {
+	margin-right: 15px;
+	padding-left: 15px;
+	white-space: nowrap;
+	/*禁止换行*/
+	color: gray !important;
+	float: left;
+}
+
+.footer-beizhu {
+	font-size: 12px;
+	color: rgba(102, 102, 102, .8);
+}
+
+.footer-weixin {
+	float: right;
+	position: relative;
+	margin-right: 20px;
+}
+
+.weixin-logo-icon {
+	background-repeat: no-repeat;
+	background-image: url(../img/wewix-ico.svg);
+	background-size: 42px 42px;
+	height: 42px;
+	width: 42px;
+	opacity: .8;
+	cursor: pointer;
+	margin: 0;
+}
+
+.weixin-logo-icon:hover .footer-saoma1 {
+	display: block;
+}
+
+.footer-saoma1 {
+	background: url(../img/erweima-app.svg)10px 10px no-repeat;
+	background-size: 140px 140px;
+	background-color: white;
+	height: 160px;
+	width: 160px;
+	position: absolute;
+	top: -170px;
+	right: -60px;
+	display: none;
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+	margin-top: 160px;
+	margin-left: 68px;
+}
+
+.footer-saoma2 {
+	background: url(../img/erweima-app.svg)10px 10px no-repeat;
+	background-size: 140px 140px;
+	background-color: white;
+	height: 160px;
+	width: 160px;
+	position: absolute;
+	top: -170px;
+	right: -60px;
+	display: none;
+}
+
+.shouji-logo-icon {
+	background-repeat: no-repeat;
+	background-image: url(../img/shouji-logo-icon.svg);
+	background-size: 42px 42px;
+	height: 42px;
+	width: 42px;
+	opacity: .8;
+	cursor: pointer;
+	margin: 0;
+}
+
+.shouji-logo-icon:hover .footer-saoma2 {
+	display: block;
+}
+
+footer {
+	display: block;
+}
+
+footer {
+	background-color: #333;
+	padding: 46.5px 0;
+}
+
+.footer-phone {
+	background-color: #333;
+	text-align: center;
+	color: rgba(102, 102, 102, .8);
+	padding: 16.5px 0;
+	overflow: hidden;
+	display: none;
+}
+
+
+/*媒体查询*/
+
+@media (max-width: 768px) {
+	.mynav {
+		height: 60px;
+	}
+	.line-top {
+		display: none;
+	}
+	.mynavbarul a {
+		border-bottom: 1px solid gainsboro;
+	}
+	.footer-computer {
+		display: none !important;
+	}
+	.footer-phone {
+		display: block !important;
+		font-size: 10px;
+	}
+	footer {
+		padding: 0;
+	}
+	/*.mynav{
+	height: 58px; border: 0px;
+}*/
+	.mynavbarul {
+		background: ghostwhite;
+	}
+	#hdbtn {
+		margin-top: -8px;
+		margin-bottom: 0;
+		border: none;
+		background: ghostwhite;
+		color: #777;
+	}
+	#hdbtn:hover {
+		margin-top: -8px;
+		margin-bottom: 0;
+		border: none;
+		background: ghostwhite;
+		color: #777;
+		cursor: pointer; //变小手
+	}
+	.navbar-default {
+		background-color: ghostwhite;
+		border-color: #e7e7e7;
+	}
+	.modal-content {
+		width: 280px;
+		height: 350px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.pop-erweima-text {
+		font-size: 10px;
+		color: #666;
+		margin: 10px auto;
+	}
+	#picweima {
+		width: 150px;
+		height: 150px;
+	}
+	.amylogo {
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		background: url();
+		margin-left: 0;
+		background-color: #f8f8ff;
+	}
+	.amylogo-pic {
+		margin: 5px 5px;
+		display: block;
+		height: 45px;
+		width: 45px;
+	}
+}
