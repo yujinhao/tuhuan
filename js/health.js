@@ -53,7 +53,6 @@ $(function() {
 			}
 		}
 	}
-	
 
 	function inter() {
 		timer = setInterval(function() {
@@ -71,9 +70,7 @@ $(function() {
 
 	}
 
-
-
-//无限循环轮播。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+	//无限循环轮播。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
 	//	changleft();
 	indexx()
 
@@ -85,7 +82,8 @@ $(function() {
 			inow = 0
 			$('#myslide-ul').css('transition', '')
 
-		}	$('.myslidepic').eq(inow + 2).children('p').addClass('disp').parent().siblings().children('p').removeClass('disp');
+		}
+		$('.myslidepic').eq(inow + 2).children('p').addClass('disp').parent().siblings().children('p').removeClass('disp');
 		$('.myslidepic').eq(inow + 2).children('img').addClass('tranpic').parent().siblings().children('img').removeClass('tranpic');
 		changleft();
 		indexx()
@@ -99,7 +97,7 @@ $(function() {
 			$('#myslide-ul').css('transition', '')
 
 		}
-			$('.myslidepic').eq(inow + 2).children('p').addClass('disp').parent().siblings().children('p').removeClass('disp');
+		$('.myslidepic').eq(inow + 2).children('p').addClass('disp').parent().siblings().children('p').removeClass('disp');
 		$('.myslidepic').eq(inow + 2).children('img').addClass('tranpic').parent().siblings().children('img').removeClass('tranpic');
 		changleft();
 		indexx()
@@ -127,18 +125,20 @@ $(function() {
 				//跳转回来取消过渡效果！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！注意！！！！！！！！！！！！
 				$('#myslide-ul').css('transition', '')
 				$('.myslidepic').eq(inow + 2).children('p').addClass('disp')
+//				$('.myslidepic').eq(inow + 2).children('img').css('transition', '')
 				$('.myslidepic').eq(inow + 2).children('img').addClass('tranpic')
+
 			} else {
 				changleft()
 				//		$('.myslidepic').children('img').eq(inow+3).css('transform','scale(1.5)')
 				$('#myslide-ul').css('transition', 'left 2s')
-				$('.myslidepic').eq(inow + 2).children('img').addClass('tranpic').parent().siblings().children('img').removeClass('tranpic');
-				
-				$('.myslidepic').eq(inow + 2).children('p').addClass('disp').parent().siblings().children('p').removeClass('disp');
-			console.log('bbb')
+				$('.myslidepic').eq(inow + 2).children('img').addClass('tranpic transpic').parent().siblings().children('img').removeClass('tranpic transpic');
+
+				$('.myslidepic').eq(inow + 2).children('p').addClass('disp transpic').parent().siblings().children('p').removeClass('disp transpic');
+				console.log('bbb')
 			}
 
-		}, 3000)
+		}, 4000)
 	}
 
 })

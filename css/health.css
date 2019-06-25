@@ -12,9 +12,11 @@ header {
 
 .tranpic{
 	transform: scale(1.8);
-	transition: 1s;
+	/*transition: 0.5s;*/
 }
-
+.transpic{
+	transition: 0.5s;
+}
 .i-itme-conm {
 	position: relative;
 }
@@ -60,7 +62,7 @@ header {
     color: #333;
     display: none;
     transition: 2s;
-    animation: goup 1s linear;
+    animation: goup 1s ease-in ;
     /*margin: 20px 0 15px;*/
 	/*margin-top: 20px;*/
 }
@@ -95,9 +97,11 @@ header {
 .disp{
 	display: block !important;
 	
-	animation:goup 1s linear;
-	transition: 2s;
+	/*animation:goup 1s linear;*/
+	/*transition: 2s;*/
 }
+
+
 @keyframes goup{
 	from{
 		top:75%;
@@ -206,8 +210,8 @@ header {
 
 .carousel-inner .item img {
 	margin: 0 auto;
-	/*height: 760px;*/
-	width: auto;
+	height: 100%;
+	width: 100%;
 }
 
 .slide {
@@ -531,15 +535,15 @@ header {
 	margin-right: 4px;
 }
 
-.iphone-slide {
-	overflow: hidden;
-	background-image: url(../img/health/shoujibei_icon.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 660px;
-	margin-top: 98px;
+.iphone-slide{
+    overflow: hidden;
+    background-image: url(../img/health/shoujibei_icon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: 660px; */
+    margin-top: 98px;
 }
 
 .myphone-banner {

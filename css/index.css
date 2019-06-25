@@ -274,8 +274,8 @@ p {
 
 .carousel-inner .item img {
 	margin: 0 auto;
-	/*height: 760px;*/
-	width: auto;
+	height: 100%;
+	width: 100%;
 }
 
 .slide {
